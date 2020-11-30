@@ -1,55 +1,37 @@
 <template>
-  <div class="container">
-    <router-view/>
+  <div class="container flex justify-center align-center">
+    <div class="search-app m-12">
+      <input placeholder="Search"/>
+    </div>
   </div>
 </template>
 
 <script>
-export default {}
+import axios from "axios";
+
+export default {
+  data() {
+    return {
+      word: null
+    }
+  },
+  mounted() {
+    axios
+      .get('https://owlbot.info/api/v4/dictionary/banana', {
+        headers: {
+          'Authorization': `token 2183854d54feca89247cf5335e9a0ec3c9a6a684`
+        }
+      })
+      .then(response => (this.word = response.data))
+  },
+};
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-@apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
 .container {
   margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  min-height: 30vh;
   text-align: center;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
 </style>

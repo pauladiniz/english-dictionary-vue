@@ -9,8 +9,10 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
+    "axios": "^0.21.0",
     "core-js": "^3.6.5",
-    "nuxt": "^2.14.6"
+    "nuxt": "^2.14.6",
+    "stylus-loader": "^4.3.0"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^3.1.0"
