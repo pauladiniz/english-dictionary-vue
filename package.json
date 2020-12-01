@@ -12,6 +12,7 @@
     "axios": "^0.21.0",
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
+    "stylus": "^0.54.8",
     "stylus-loader": "^4.3.0"
   },
   "devDependencies": {
