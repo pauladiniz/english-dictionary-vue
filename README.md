@@ -1,4 +1,6 @@
-# casafy-frontend-test
+# English Dictionary
+
+This is a project I developed using Nuxt and OwlBot API.
 
 ## Build Setup
 
