@@ -43,8 +43,8 @@ export default {
     }
   },
   methods:{
-    async handleSearch() {
-      await axios
+    handleSearch() {
+      axios
       .get(`https://owlbot.info/api/v4/dictionary/${this.searchWord}`,{
         headers: {
           'Authorization': `token 2183854d54feca89247cf5335e9a0ec3c9a6a684`
