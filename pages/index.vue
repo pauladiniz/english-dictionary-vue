@@ -3,7 +3,7 @@
   <div class="search-app w-full max-w-screen-lg p-10">
     <h3 class="text-center">Dictionary 📙</h3>
     <p class="text-center mb-8">Procure por qualquer palavra da língua inglesa e veja o seu significado, pronuncia e definição.</p>
-    <input v-if
+    <input
       class="w-full mb-8"
       placeholder="Search"
       v-model="searchWord"
