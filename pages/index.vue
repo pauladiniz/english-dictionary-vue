@@ -23,7 +23,6 @@
         :definition='definition.definition'
         :src="definition.image_url"
       />
-      <empty-state/>
     </div>
   </div>
 </div>
